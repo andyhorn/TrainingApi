@@ -32,6 +32,6 @@ stages:
     - task: KubernetesManifest@0
       inputs:
         action: 'deploy'
-        kubernetesServiceConnection: 'Training API Cluster'
+        kubernetesServiceConnection: 'kubernetes'
         namespace: 'default'
         manifests: 'kubernetes/deployment.yaml'
